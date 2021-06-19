@@ -25,7 +25,7 @@ const SignIn = () => {
     } else if (res.status === 200) {
       dispatch({ type: "USER", payload: true });
       window.alert("welcome : " + data.message.email);
-      history.push("/");
+      history.push("/dashboard");
     } else if (res.status === 400) {
       window.alert("invalid Credientials");
     }

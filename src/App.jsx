@@ -13,6 +13,7 @@ import Footer from "./Component/Footer";
 import Webdev from "./Component/Webdev";
 import Frontend from "./Component/FrontendPanel";
 import Dashboard from "./Component/Dashboard";
+import Admin from "./Component/Admin";
 import { SignIn, SignUp } from "./Component/SignInSignUp";
 import { Profile } from "./Component/Profile";
 import EditProfile from "./Component/EditProfile";
@@ -21,9 +22,11 @@ import Quiz from "./Component/Quiz";
 import Compiler from "./Component/Compiler";
 import { initialState, reducer } from "../src/Reducer/UseReducer";
 export const UserContext = createContext();
+// export const AdminContext = createContext();
 
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  // const [astate, adispatch] = useReducer(reducer, initialState);
   return (
     <div className="app">
       <UserContext.Provider value={{ state, dispatch }}>
@@ -78,6 +81,13 @@ const App = () => {
         </Switch>
         <Footer />
       </UserContext.Provider>
+      {/* <AdminContext.Provider value={{ astate, adispatch }}>
+        <Switch>
+          <Route exact path="/admin">
+            <Admin />
+          </Route>
+        </Switch>
+      </AdminContext.Provider> */}
     </div>
   );
 };

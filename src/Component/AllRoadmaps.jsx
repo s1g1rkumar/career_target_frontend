@@ -1,14 +1,14 @@
 import React from "react";
-import frontend from "../Images/roadmap/frontend.png";
-import backend from "../Images/roadmap/backend.png";
-import reactjs from "../Images/roadmap/react.png";
-import java from "../Images/roadmap/java.png";
-import dotnet from "../Images/roadmap/dotnet.png";
-import android from "../Images/roadmap/android.png";
-import game1 from "../Images/roadmap/game development 1.png";
-import game2 from "../Images/roadmap/game development 2.png";
-import ios from "../Images/roadmap/ios.png";
-import node from "../Images/roadmap/node.png";
+import frontend from "../Images/roadmaps/frontend.png";
+import backend from "../Images/roadmaps/backend.png";
+import reactjs from "../Images/roadmaps/react.png";
+import java from "../Images/roadmaps/java.png";
+import dotnet from "../Images/roadmaps/dotnet.png";
+import android from "../Images/roadmaps/android.png";
+import game1 from "../Images/roadmaps/game development 1.png";
+import game2 from "../Images/roadmaps/game development 2.png";
+import ios from "../Images/roadmaps/ios.png";
+import node from "../Images/roadmaps/node.png";
 const Frontend = () => {
   return (
     <>

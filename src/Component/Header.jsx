@@ -49,11 +49,10 @@ function Header() {
             </NavLink>
           </li>
           <li class="nav-item">
-            <NavLink className="navlink" to="/sign">
+            <NavLink className="navlink" to="/logout">
               <div type="button" id="Log-out" value="logout">
-                {" "}
                 <Button variant="contained" color="secondary" className="btn">
-                  Logout{" "}
+                  Logout
                 </Button>
               </div>
             </NavLink>

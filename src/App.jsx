@@ -66,15 +66,11 @@ const App = () => {
       <UserContext.Provider value={{ state, dispatch }}>
         <Header />
         <Switch>
-          <Route exact path="/" component={Home}>
-            {/* <Home/> */}
-          </Route>
+          <Route exact path="/" component={Home}></Route>
           <Route exact path="/about">
             <About />
           </Route>
-          <Route exact path="/contact" component={Contact}>
-            {/* <Contact /> */}
-          </Route>
+          <Route exact path="/contact" component={Contact}></Route>
           <Route exact path="/services">
             <Services />
           </Route>
@@ -174,19 +170,19 @@ const App = () => {
           <Route exact path="/roadmap">
             <Roadmap />
           </Route>
-          <Route exact path="/frontEnd">
+          <Route exact path="/rfront">
             <Frontend />
           </Route>
-          <Route exact path="/backend">
+          <Route exact path="/rbackend">
             <Backend />
           </Route>
-          <Route exact path="/reactjs" component={ReactJS} />
-          <Route exact path="/java" component={Java} />
-          <Route exact path="/dotnet" component={Dotnet} />
-          <Route exact path="/android" component={Android} />
-          <Route exact path="/game" component={Game} />
-          <Route exact path="/ios" component={Ios} />
-          <Route exact path="/node" component={Node} />
+          <Route exact path="/rreactjs" component={ReactJS} />
+          <Route exact path="/rjava" component={Java} />
+          <Route exact path="/rdotnet" component={Dotnet} />
+          <Route exact path="/randroid" component={Android} />
+          <Route exact path="/rgame" component={Game} />
+          <Route exact path="/rios" component={Ios} />
+          <Route exact path="/rnode" component={Node} />
           <Redirect to="/" />
         </Switch>
         <Footer />

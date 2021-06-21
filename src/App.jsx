@@ -13,7 +13,7 @@ import Footer from "./Component/Footer";
 import Webdev from "./Component/Webdev";
 import FrontendPanel from "./Component/FrontendPanel";
 import Dashboard from "./Component/Dashboard";
-import Admin from "./Component/Admin";
+
 import { SignIn, SignUp } from "./Component/SignInSignUp";
 import { Profile } from "./Component/Profile";
 import EditProfile from "./Component/EditProfile";
@@ -187,13 +187,6 @@ const App = () => {
         </Switch>
         <Footer />
       </UserContext.Provider>
-      {/* <AdminContext.Provider value={{ astate, adispatch }}>
-        <Switch>
-          <Route exact path="/admin">
-            <Admin />
-          </Route>
-        </Switch>
-      </AdminContext.Provider> */}
     </div>
   );
 };

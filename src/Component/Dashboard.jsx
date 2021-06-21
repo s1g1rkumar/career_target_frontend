@@ -84,7 +84,7 @@ function Dashboard() {
                   </p>
                 </NavLink>
                 <NavLink
-                  to="/rdotnet"
+                  to="#"
                   className="col-md-3 col-sm-6 offset-md-1 border  rounded "
                   style={{
                     height: "200px",
@@ -98,7 +98,7 @@ function Dashboard() {
                   </p>
                 </NavLink>
                 <NavLink
-                  to="/randroid"
+                  to="#"
                   className="col-md-3 col-sm-6 offset-md-1 border  rounded shadow"
                   style={{
                     height: "200px",

@@ -1,0 +1,142 @@
+/* .WebDevelopment{
+    background-color: rgba(224, 220, 220, 0.932);
+    display: flex;
+    padding-top: 15px;
+}
+.sideBar{
+    width: 175px;
+    padding: 5px 5px;
+    background: rgb(0, 47, 255);
+}
+.TableContaintsShow{
+    margin-top: 5px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px grey, 1px 1px 2px grey;
+
+  
+}
+.TableContaintsShow button{
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    text-align: start;
+}
+
+
+
+.WebDevelopment__contants{
+    width: 100%;
+    
+}
+
+.WebDeveloopment__Header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    padding: 10px 0vw;
+    margin: 0 0.8vw;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px grey, 1px 1px 2px grey;
+}
+.WebDeveloopment__Header button{
+    outline: none;
+}
+.WebDevelopment__Contant{
+    padding: 15px 1vw 15px 1vw;
+}
+
+.css__page >h1{
+    background: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px grey, 1px 1px 2px grey;
+   margin-bottom: 1vw;
+   padding: 1.5vw;
+}
+.css__page__box{
+    background: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px grey, 1px 1px 2px grey;
+   margin-bottom: 1vw;
+   padding: 1.5vw;
+}
+
+.css__page__box__btn button{
+   outline: none;
+} */
+
+
+
+.WebDevelopment{
+    background-color: rgba(224, 220, 220, 0.932);
+    display: flex;
+    padding-top: 15px;
+}
+.sideBar{
+    width: 175px;
+    padding: 5px 5px;
+    background: rgb(0, 47, 255);
+}
+.TableContaintsShow{
+    margin-top: 5px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px grey, 1px 1px 2px grey;
+
+  
+}
+.TableContaintsShow button{
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    text-align: start;
+}
+
+
+
+.WebDevelopment__contants{
+    width: 100%;
+    
+}
+
+.WebDeveloopment__Header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    padding: 10px 0vw;
+    margin: 0 0.8vw;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px grey, 1px 1px 2px grey;
+}
+.WebDeveloopment__Header button{
+    outline: none;
+}
+.WebDevelopment__Contant{
+    padding: 15px 1vw 15px 1vw;
+}
+
+
+/* front end  page css */
+
+.css__page >h1{
+    background: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px grey, 1px 1px 2px grey;
+   margin-bottom: 1vw;
+   padding: 1.5vw;
+}
+.css__page__box{
+    background: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px grey, 1px 1px 2px grey;
+   margin-bottom: 1vw;
+   padding: 1.5vw;
+}
+
+.css__page__box__btn button{
+   outline: none;
+}

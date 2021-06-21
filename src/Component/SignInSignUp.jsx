@@ -3,13 +3,39 @@ import { useHistory, NavLink } from "react-router-dom";
 import logo from "../Images/career-target-logo-f.png";
 import signin from "../Images/svg/signin.svg";
 import signup from "../Images/svg/signup.svg";
+import { GoogleLogin, GoogleLogout } from "react-google-login";
 import { UserContext } from "../App";
 const SignIn = () => {
   const { state, dispatch } = useContext(UserContext);
-
+  let gtoken;
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const responseGoogle = async (response) => {
+    console.log(response);
+    gtoken = response.tokenId;
+    console.log("google Token id", gtoken);
+
+    //verifying gtoken in backend
+    const result = await fetch("/glogin", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ gtoken: gtoken }), //body close
+    }); //fetch close
+    const res = await result.json();
+    console.log(result.status);
+    console.log(result, " ", res);
+    if (result.status === 200) {
+      dispatch({ type: "USER", payload: true });
+      window.alert("welcome");
+      console.log(res);
+      history.push("/dashboard");
+    } else {
+      window.alert("failed to login");
+      // history.push("/");
+    }
+  };
+
   const loginUser = async (e) => {
     e.preventDefault();
     const res = await fetch("/signin", {
@@ -170,16 +196,14 @@ const SignIn = () => {
                     --------------OR--------------
                   </div>
                   <div className="col-12 mt-3 text-center">
-                    <div
-                      className="logo d-inline border rounded-pill p-2"
-                      style={{ color: "#ECF0F1" }}
-                    >
-                      <i
-                        class="fab fa-google"
-                        style={{ fontSize: "25px", color: "#fff" }}
-                      ></i>{" "}
-                      &nbsp;&nbsp;Sign In With Google
-                    </div>
+                    <GoogleLogin
+                      clientId="501151150549-k2hb3ju8q1tecdhpoe7n856qrqh3125t.apps.googleusercontent.com"
+                      buttonText="Login with Google"
+                      onSuccess={responseGoogle}
+                      onFailure={responseGoogle}
+                      cookiePolicy={"single_host_origin"}
+                      style={{ backgroundColor: "#000000" }}
+                    />
                   </div>
                   <div className="col-12 mt-5 text-center">
                     <p className="d-inline" style={{ color: "#CCCCFF" }}>

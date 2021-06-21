@@ -11,6 +11,7 @@ export const Profile = () => {
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
+    email: "",
     profession: "",
     bio: "",
   });

@@ -4,7 +4,11 @@ import "../CSS/Contact.css";
 
 function Contact() {
   const history = useHistory();
-  const [userData, setUserData] = useState({});
+  const [userData, setUserData] = useState({
+    msg: " ",
+    firstName: " ",
+    lastName: " ",
+  });
   const callContact = async () => {
     try {
       var res = await fetch("/profile", {
@@ -86,7 +90,7 @@ function Contact() {
                     name="message"
                     class="form-control"
                     required
-                    value={userData.message}
+                    value={userData.msg}
                   ></textarea>{" "}
                 </div>
                 <div class="d-flex align-items-center flex-wrap justify-content-between pt-4">

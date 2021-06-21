@@ -12,7 +12,7 @@ function Dashboard() {
           <div className="container-fluid" style={{ backgroundColor: "#FFF" }}>
             <div className="container pt-5 pb-3" style={{}}>
               <div className="row">
-                <div className="col-7 offset-3 text-center">
+                <div className="col-md-7 col-sm-12 offset-md-3 text-center">
                   <h1 className="">Grow with us.</h1>
                   <p className="">
                     Step by step guides and paths to learn different tools or
@@ -25,7 +25,7 @@ function Dashboard() {
               <div className="row">
                 <NavLink
                   to="/webdevelopment"
-                  className="col-3 border  rounded  btn"
+                  className="col-md-3 col-sm-6 border  rounded  btn"
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -39,7 +39,7 @@ function Dashboard() {
                 </NavLink>
                 <NavLink
                   to="/roadmap"
-                  className="col-3 offset-1 border  rounded "
+                  className="col-md-3 col-sm-6 offset-md-1 border  rounded "
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -54,7 +54,7 @@ function Dashboard() {
                 </NavLink>
                 <NavLink
                   to="/quiz"
-                  className="col-3 offset-1 border  rounded "
+                  className="col-md-3 col-sm-6 offset-md-1 border  rounded "
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -70,7 +70,7 @@ function Dashboard() {
               <div className="row mt-5 pb-5">
                 <NavLink
                   to="/compiler"
-                  className="col-3 border  rounded "
+                  className="col-md-3 col-sm-6 border  rounded "
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -85,7 +85,7 @@ function Dashboard() {
                 </NavLink>
                 <NavLink
                   to="/rdotnet"
-                  className="col-3 offset-1 border  rounded "
+                  className="col-md-3 col-sm-6 offset-md-1 border  rounded "
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -99,7 +99,7 @@ function Dashboard() {
                 </NavLink>
                 <NavLink
                   to="/randroid"
-                  className="col-3 offset-1 border  rounded shadow"
+                  className="col-md-3 col-sm-6 offset-md-1 border  rounded shadow"
                   style={{
                     height: "200px",
                     backgroundImage:

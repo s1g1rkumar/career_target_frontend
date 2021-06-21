@@ -15,7 +15,7 @@ function Roadmap() {
           >
             <div className="container pt-5 pb-5" style={{}}>
               <div className="row">
-                <div className="col-6 offset-3 text-center">
+                <div className="col-md-6 col-sm-12 offset-md-3 text-center">
                   <h1 className="">Developement Roadmaps</h1>
                   <p className="">
                     Step by step guides and paths to learn different tools or
@@ -28,7 +28,7 @@ function Roadmap() {
               <div className="row">
                 <NavLink
                   to="/rfront"
-                  className="col-3 border  rounded shadow btn"
+                  className="col-md-3 col-sm-6 border  rounded shadow btn"
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -43,7 +43,7 @@ function Roadmap() {
                 </NavLink>
                 <NavLink
                   to="/rbackend"
-                  className="col-3 offset-1 border  rounded shadow"
+                  className="col-md-3 col-sm-6 offset-md-1 border  rounded shadow"
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -58,7 +58,7 @@ function Roadmap() {
                 </NavLink>
                 <NavLink
                   to="/rreactjs"
-                  className="col-3 offset-1 border  rounded shadow"
+                  className="col-md-3 col-sm-6 offset-md-1 border  rounded shadow"
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -75,7 +75,7 @@ function Roadmap() {
               <div className="row mt-5 pb-5">
                 <NavLink
                   to="/rjava"
-                  className="col-3 border  rounded shadow"
+                  className="col-md-3 col-sm-6 border  rounded shadow"
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -90,7 +90,7 @@ function Roadmap() {
                 </NavLink>
                 <NavLink
                   to="/rdotnet"
-                  className="col-3 offset-1 border  rounded shadow"
+                  className="col-md-3 col-sm-6 offset-md-1 border  rounded shadow"
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -105,7 +105,7 @@ function Roadmap() {
                 </NavLink>
                 <NavLink
                   to="/randroid"
-                  className="col-3 offset-1 border  rounded shadow"
+                  className="col-md-3 col-sm-6 offset-md-1 border  rounded shadow"
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -122,7 +122,7 @@ function Roadmap() {
               <div className="row mt-5 pb-5">
                 <NavLink
                   to="/rgame"
-                  className="col-3 border  rounded shadow"
+                  className="col-md-3 col-sm-6 border  rounded shadow"
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -137,7 +137,7 @@ function Roadmap() {
                 </NavLink>
                 <NavLink
                   to="/rios"
-                  className="col-3 offset-1 border  rounded shadow"
+                  className="col-md-3 col-sm-6 offset-md-1 border  rounded shadow"
                   style={{
                     height: "200px",
                     backgroundImage:
@@ -152,7 +152,7 @@ function Roadmap() {
                 </NavLink>
                 <NavLink
                   to="/rnode"
-                  className="col-3 offset-1 border  rounded shadow"
+                  className="col-md-3 col-sm-6 offset-md-1 border  rounded shadow"
                   style={{
                     height: "200px",
                     backgroundImage:

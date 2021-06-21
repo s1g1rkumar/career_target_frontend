@@ -19,24 +19,16 @@ function About() {
                 <div class="content">
                   <h3>Who We Are</h3>
                   <h2>
-                    Expedita voluptas omnis cupiditate totam eveniet nobis sint
-                    iste. Dolores est repellat corrupti reprehenderit.
+                    We provide a variety of services for you to learn, thrive
+                    and also have fun!
                   </h2>
+                  <p>Free Tutorials, Articles,Frequent Coding Competitions.</p>
                   <p>
-                    Quisquam vel ut sint cum eos hic dolores aperiam. Sed
-                    deserunt et. Inventore et et dolor consequatur itaque ut
-                    voluptate sed et. Magnam nam ipsum tenetur suscipit
-                    voluptatum nam et est corrupti.
+                    CareerTarget is a platform to learn skills that you need for
+                    technology jobs. We help you polish your skills and get
+                    ready for the job, whether you are a fresh college graduate
+                    or a working professional.
                   </p>
-                  {/* <div class="text-center text-lg-start">
-                    <a
-                      href="#"
-                      class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center"
-                    >
-                      <span>Read More</span>
-                      <i class="bi bi-arrow-right"></i>
-                    </a>
-                  </div> */}
                 </div>
               </div>
 
@@ -56,41 +48,39 @@ function About() {
         <section id="values" class="values">
           <div class="container" data-aos="fade-up">
             <header class="section-header text-center">
-              <h3>Our Values</h3>
-              <p>Odit est perspiciatis laborum et dicta</p>
+              <h3>Our values</h3>
+              <p>
+                If you are passionate about tackling some of the most
+                interesting problems around,
+              </p>
+              <p>we would love to hear from you.</p>
             </header>
 
             <div class="row">
               <div class="col-lg-4">
                 <div class="box" data-aos="fade-up" data-aos-delay="200">
                   <img src={values1} class="img-fluid" alt="" />
-                  <h3>Ad cupiditate sed est odio</h3>
-                  <p>
-                    Eum ad dolor et. Autem aut fugiat debitis voluptatem
-                    consequuntur sit. Et veritatis id.
-                  </p>
+                  <h3>Data Driven</h3>
+                  <p>We never stop learning</p>
+                  <p>We operate in a ‘no excuse’ zone</p>
                 </div>
               </div>
 
               <div class="col-lg-4 mt-4 mt-lg-0">
                 <div class="box" data-aos="fade-up" data-aos-delay="400">
                   <img src={values2} class="img-fluid" alt="" />
-                  <h3>Voluptatem voluptatum alias</h3>
-                  <p>
-                    Repudiandae amet nihil natus in distinctio suscipit id.
-                    Doloremque ducimus ea sit non.
-                  </p>
+                  <h3>Customer Delight</h3>
+                  <p>We are obsessed with customer happiness</p>
+                  <p>We sweat the details in every interaction</p>
                 </div>
               </div>
 
               <div class="col-lg-4 mt-4 mt-lg-0">
                 <div class="box" data-aos="fade-up" data-aos-delay="600">
                   <img src={values3} class="img-fluid" alt="" />
-                  <h3>Fugit cupiditate alias nobis.</h3>
-                  <p>
-                    Quam rem vitae est autem molestias explicabo debitis sint.
-                    Vero aliquid quidem commodi.
-                  </p>
+                  <h3>Giver</h3>
+                  <p>We are direct, but not mean</p>
+                  <p>We make time to help others achieve their goals</p>
                 </div>
               </div>
             </div>

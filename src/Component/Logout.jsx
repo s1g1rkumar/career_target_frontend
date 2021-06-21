@@ -16,7 +16,7 @@ function Logout() {
     })
       .then((res) => {
         dispatch({ type: "USER", payload: false });
-        history.push("/login", { replace: true });
+        history.push("/", { replace: true });
         if (!res.status === 200) {
           const error = new Error(res.error);
           throw error;
@@ -26,10 +26,7 @@ function Logout() {
         console.log(err);
       });
   }); //fun logout
-  return (
-    <>
-    </>
-  );
+  return <></>;
 }
 
 export default Logout;

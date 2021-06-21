@@ -50,11 +50,9 @@ function Header() {
           </li>
           <li class="nav-item">
             <NavLink className="navlink" to="/logout">
-              <div type="button" id="Log-out" value="logout">
-                <Button variant="contained" color="secondary" className="btn">
-                  Logout
-                </Button>
-              </div>
+              <Button variant="contained" color="secondary" className="btn">
+                Logout
+              </Button>
             </NavLink>
           </li>
         </>

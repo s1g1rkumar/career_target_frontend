@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import { NavLink } from "react-router-dom";
 import "../CSS/Header.css";
 import { SignIn, SignUp } from "./SignInSignUp";
-import Button from '@material-ui/core/Button';
+import Button from "@material-ui/core/Button";
 import logo from "../Images/career-target-logo-f.png";
 import { UserContext } from "../App";
 function Header() {
@@ -20,12 +20,13 @@ function Header() {
             </NavLink>
           </li>
           <li class="nav-item">
-            <NavLink class="nav-link" to="/Profile">
+            <NavLink class="nav-link" to="/roadmap">
               <div type="button" class="btn" id="profile" value="profile">
-                Profile
+                Roadmap
               </div>
             </NavLink>
           </li>
+
           <li class="nav-item">
             <NavLink class="nav-link" to="/quiz">
               <div type="button" class="btn" id="quiz" value="quiz">
@@ -41,33 +42,35 @@ function Header() {
             </NavLink>
           </li>
           <li class="nav-item">
-    <NavLink  className="navlink" to="/sign">
-              <div
-                type="button"
-                id="Log-out"
-                value="logout"
-              >   <Button variant="contained" color="secondary" className = "btn">
-                Logout </Button> 
+            <NavLink class="nav-link" to="/Profile">
+              <div type="button" class="btn" id="profile" value="profile">
+                Profile
               </div>
             </NavLink>
-            </li>
-           
+          </li>
+          <li class="nav-item">
+            <NavLink className="navlink" to="/sign">
+              <div type="button" id="Log-out" value="logout">
+                {" "}
+                <Button variant="contained" color="secondary" className="btn">
+                  Logout{" "}
+                </Button>
+              </div>
+            </NavLink>
+          </li>
         </>
       );
     } else {
       return (
         <>
-          <li className="nav-item" style={{border:"none"}}>
-            <NavLink className="navlink" to="/login" style={{border:"none"}}>
-              <div
-                type="button"
-                id="sign-in"
-                value="signin"
-              >
-                 <Button variant="contained" color="secondary" className = "btn"> 
-                Sign In</Button> 
+          <li className="nav-item" style={{ border: "none" }}>
+            <NavLink className="navlink" to="/login" style={{ border: "none" }}>
+              <div type="button" id="sign-in" value="signin">
+                <Button variant="contained" color="secondary" className="btn">
+                  Sign In
+                </Button>
               </div>
-            </NavLink> 
+            </NavLink>
           </li>
         </>
       );

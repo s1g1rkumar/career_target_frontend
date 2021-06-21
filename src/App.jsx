@@ -11,7 +11,7 @@ import Contact from "./Component/Contact";
 import Header from "./Component/Header";
 import Footer from "./Component/Footer";
 import Webdev from "./Component/Webdev";
-import Frontend from "./Component/FrontendPanel";
+import FrontendPanel from "./Component/FrontendPanel";
 import Dashboard from "./Component/Dashboard";
 import Admin from "./Component/Admin";
 import { SignIn, SignUp } from "./Component/SignInSignUp";
@@ -20,32 +20,40 @@ import EditProfile from "./Component/EditProfile";
 import Logout from "./Component/Logout";
 import Quiz from "./Component/Quiz";
 import Compiler from "./Component/Compiler";
-import WebDevelopment from './Component/WebDevelopment.jsx'
-import DesktopDevelopment from './Component/DesktopDevelopment.jsx';
-import MobileDevelopment from './Component/MobileDevelopment.jsx'
+import WebDevelopment from "./Component/WebDevelopment.jsx";
+import DesktopDevelopment from "./Component/DesktopDevelopment.jsx";
+import MobileDevelopment from "./Component/MobileDevelopment.jsx";
 import { initialState, reducer } from "../src/Reducer/UseReducer";
-import QuizePageHtml from './Component/QuizPages/QuizePageHtml.jsx'
-import QuizePageCss from  './Component/QuizPages/QuizePageCss.jsx'
-import QuizePageJavascript from  './Component/QuizPages/QuizePageJavascript'
-import QuizeAngular from  './Component/QuizPages/QuizeAngularjs'
-import QuizeAjax from  './Component/QuizPages/QuizeAjax'
-import QuizeSass from  './Component/QuizPages/QuizeSass'
-import QuizeJson from  './Component/QuizPages/QuizeJson'
-import QuizeBootstrap from './Component/QuizPages/QuizeBootstrap'
-import QuizeCSharp  from './Component/QuizPages/QuizeCsharp'
-import QuizeMongo from './Component/QuizPages/QuizeMongo';
-import QuizeMySql from './Component/QuizPages/QuizeMySql';
-import QuizeSql from './Component/QuizPages/QuizeSql';
-import QuizePython from './Component/QuizPages/QuizePython';
-import QuizeExpress from './Component/QuizPages/QuizeExpress';
-import QuizeNode from './Component/QuizPages/QuizeNode';
-import QuizeJava from './Component/QuizPages/QuizeJava';
-import QuizeCplus from './Component/QuizPages/QuizeCplus'
+import QuizePageHtml from "./Component/QuizPages/QuizePageHtml.jsx";
+import QuizePageCss from "./Component/QuizPages/QuizePageCss.jsx";
+import QuizePageJavascript from "./Component/QuizPages/QuizePageJavascript";
+import QuizeAngular from "./Component/QuizPages/QuizeAngularjs";
+import QuizeAjax from "./Component/QuizPages/QuizeAjax";
+import QuizeSass from "./Component/QuizPages/QuizeSass";
+import QuizeJson from "./Component/QuizPages/QuizeJson";
+import QuizeBootstrap from "./Component/QuizPages/QuizeBootstrap";
+import QuizeCSharp from "./Component/QuizPages/QuizeCsharp";
+import QuizeMongo from "./Component/QuizPages/QuizeMongo";
+import QuizeMySql from "./Component/QuizPages/QuizeMySql";
+import QuizeSql from "./Component/QuizPages/QuizeSql";
+import QuizePython from "./Component/QuizPages/QuizePython";
+import QuizeExpress from "./Component/QuizPages/QuizeExpress";
+import QuizeNode from "./Component/QuizPages/QuizeNode";
+import QuizeJava from "./Component/QuizPages/QuizeJava";
+import QuizeCplus from "./Component/QuizPages/QuizeCplus";
 
-
-
-
-
+import Roadmap from "./Component/Roadmap";
+import {
+  Frontend,
+  Backend,
+  ReactJS,
+  Java,
+  Dotnet,
+  Android,
+  Game,
+  Ios,
+  Node,
+} from "./Component/AllRoadmaps";
 
 export const UserContext = createContext();
 // export const AdminContext = createContext();
@@ -77,7 +85,7 @@ const App = () => {
             <Webdev />
           </Route>
           <Route exact path="/frontend">
-            <Frontend />
+            <FrontendPanel />
           </Route>
           <Route exact path="/dashboard">
             <Dashboard />
@@ -102,7 +110,8 @@ const App = () => {
           </Route>
           <Route exact path="/css">
             <QuizePageCss />
-          </Route><Route exact path="/javascript">
+          </Route>
+          <Route exact path="/javascript">
             <QuizePageJavascript />
           </Route>
           <Route exact path="/ajax">
@@ -117,28 +126,36 @@ const App = () => {
           <Route exact path="/sass">
             <QuizeSass />
           </Route>
-           <Route exact path="/bootsrap">
+          <Route exact path="/bootsrap">
             <QuizeBootstrap />
-          </Route>  <Route exact path="/csharp">
+          </Route>{" "}
+          <Route exact path="/csharp">
             <QuizeCSharp />
-          </Route>  <Route exact path="/java">
+          </Route>{" "}
+          <Route exact path="/java">
             <QuizeJava />
-          </Route>  <Route exact path="/mongo">
+          </Route>{" "}
+          <Route exact path="/mongo">
             <QuizeMongo />
-          </Route>  <Route exact path="/mysql">
+          </Route>{" "}
+          <Route exact path="/mysql">
             <QuizeMySql />
-          </Route>  <Route exact path="/node">
+          </Route>{" "}
+          <Route exact path="/node">
             <QuizeNode />
-          </Route>  <Route exact path="/python">
+          </Route>{" "}
+          <Route exact path="/python">
             <QuizePython />
-          </Route>  <Route exact path="/express">
+          </Route>{" "}
+          <Route exact path="/express">
             <QuizeExpress />
-          </Route>  <Route exact path="/sql">
+          </Route>{" "}
+          <Route exact path="/sql">
             <QuizeSql />
-            </Route>
-             <Route exact path="/cplus">
+          </Route>
+          <Route exact path="/cplus">
             <QuizeCplus />
-            </Route>
+          </Route>
           <Route exact path="/compiler">
             <Compiler />
           </Route>
@@ -146,14 +163,30 @@ const App = () => {
             <Logout />
           </Route>
           <Route path="/webdevelopment">
-              <WebDevelopment />
-            </Route>
-            <Route path="/desktopdevelopment">
-              <DesktopDevelopment />
-            </Route>
-            <Route path="/mobiledevelopment">
-              <MobileDevelopment />
-            </Route>
+            <WebDevelopment />
+          </Route>
+          <Route path="/desktopdevelopment">
+            <DesktopDevelopment />
+          </Route>
+          <Route path="/mobiledevelopment">
+            <MobileDevelopment />
+          </Route>
+          <Route exact path="/roadmap">
+            <Roadmap />
+          </Route>
+          <Route exact path="/frontEnd">
+            <Frontend />
+          </Route>
+          <Route exact path="/backend">
+            <Backend />
+          </Route>
+          <Route exact path="/reactjs" component={ReactJS} />
+          <Route exact path="/java" component={Java} />
+          <Route exact path="/dotnet" component={Dotnet} />
+          <Route exact path="/android" component={Android} />
+          <Route exact path="/game" component={Game} />
+          <Route exact path="/ios" component={Ios} />
+          <Route exact path="/node" component={Node} />
           <Redirect to="/" />
         </Switch>
         <Footer />

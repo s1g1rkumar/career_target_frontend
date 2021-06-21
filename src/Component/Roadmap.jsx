@@ -19,7 +19,7 @@ function Roadmap() {
         <div className="container pt-5">
           <div className="row">
             <NavLink
-              to="/frontend"
+              to="/frontEnd"
               className="col-3 border  rounded shadow btn"
               style={{
                 height: "200px",

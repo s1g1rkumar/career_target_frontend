@@ -11,6 +11,9 @@ const SignIn = () => {
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const logout = () => {
+    window.alert("logout sucessfull");
+  };
   const responseGoogle = async (response) => {
     console.log(response);
     gtoken = response.tokenId;
@@ -205,6 +208,13 @@ const SignIn = () => {
                       style={{ backgroundColor: "#000000" }}
                     />
                   </div>
+                  {/* <div>
+                    <GoogleLogout
+                      clientId="501151150549-k2hb3ju8q1tecdhpoe7n856qrqh3125t.apps.googleusercontent.com"
+                      buttonText="Logout"
+                      onLogoutSuccess={logout}
+                    ></GoogleLogout>
+                  </div> */}
                   <div className="col-12 mt-5 text-center">
                     <p className="d-inline" style={{ color: "#CCCCFF" }}>
                       New to Career Target?

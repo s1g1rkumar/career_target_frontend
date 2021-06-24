@@ -9,8 +9,7 @@ export const Profile = () => {
   const { state, dispatch } = useContext(UserContext);
   const history = useHistory();
   const [userData, setUserData] = useState({
-    firstName: "",
-    lastName: "",
+    fullname: "",
     email: "",
     profession: "",
     bio: "",
@@ -74,7 +73,8 @@ export const Profile = () => {
                   </div>
                   <div class="col-md-6">
                     <div class="profile-head">
-                      <h5>{userData.firstName + " " + userData.lastName}</h5>
+                      <h5>{userData.fullname}</h5>
+
                       <h6>{userData.profession}</h6>
 
                       <br />
@@ -180,9 +180,7 @@ export const Profile = () => {
                             <label>Name</label>
                           </div>
                           <div class="col-md-6">
-                            <p>
-                              {userData.firstName + " " + userData.lastName}
-                            </p>
+                            <p>{userData.fullname}</p>
                           </div>
                         </div>
                         <div class="row">
